@@ -6,14 +6,13 @@
   padding: 0;
 }
 
-html,
-body {
+body,
+html {
   font-family: "Inter", sans-serif;
   background-color: #f8f9fa;
   overflow-x: hidden;
 }
 
-/* Hide scrollbar */
 body::-webkit-scrollbar {
   display: none;
 }
@@ -33,25 +32,16 @@ button {
   padding: 0.3rem;
 }
 
-/* ========== LAYOUT WRAPPERS ========== */
-.site-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-}
-
+/* Layout */
 .the-site {
-  width: 100%;
-  max-width: 1200px;
-  padding: 40px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-/* ========== HEADER TEXT ========== */
 .heading-text {
   width: 100%;
   max-width: 700px;
@@ -73,11 +63,9 @@ button {
   margin-top: 20px;
 }
 
-/* ========== FORM ========== */
 .form-container {
   display: flex;
   justify-content: center;
-  align-items: center;
   margin-top: 20px;
 }
 
@@ -88,7 +76,6 @@ button {
   border-radius: 9999px;
   padding: 5px;
   border: 1px solid #e0e0e0;
-  overflow: hidden;
 }
 
 .formm input {
@@ -114,7 +101,7 @@ button {
   background-color: #006b80;
 }
 
-/* ========== PHONE AREA ========== */
+/* Phone Area */
 .phone-area {
   display: flex;
   justify-content: center;
@@ -127,13 +114,11 @@ button {
 .phonee {
   position: relative;
   height: 30rem;
-  width: fit-content;
   z-index: 1;
 }
 
 .phonee img {
   height: 100%;
-  width: auto;
   display: block;
 }
 
@@ -174,7 +159,7 @@ button {
   left: calc(50% - 230px);
 }
 
-/* ========== SEND MONEY SECTION ========== */
+/* Send Money Section */
 .send-money {
   margin-top: 60px;
   text-align: center;
@@ -188,23 +173,39 @@ button {
 }
 
 .send-image {
+  overflow: hidden;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.scroll-track {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
   gap: 2rem;
-  padding: 0 20px;
+  animation: scroll-left 25s linear infinite;
+  width: max-content;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 .bank img {
-  width: 50px;
-  height: auto;
+  width: 60px;
   object-fit: contain;
 }
 
-/* ========== RESPONSIVE ========== */
 @media (max-width: 768px) {
   .heading-test h2 {
-    font-size: 2rem;
+    font-size: 1.8rem;
+  }
+
+  .heading-test p {
+    font-size: 0.9rem;
   }
 
   .formm input {
@@ -215,45 +216,39 @@ button {
     height: 22rem;
   }
 
-  .bank img {
-    width: 40px;
-  }
-
   .first {
     width: 3rem;
-    height: 4rem;
+    height: 3rem;
     top: 1.2rem;
     left: calc(50% + 60px);
-    max-width: 60px;
   }
 
   .arrow-01 {
-    height: 5rem;
     top: 4rem;
+    height: 5rem;
     left: calc(50% + 105px);
-    max-width: 60px;
   }
 
   .frame {
+    top: 8rem;
     width: 5rem;
     height: 4rem;
-    top: 8rem;
     left: calc(50% + 120px);
-    max-width: 60px;
   }
 
   .arrow-11 {
-    height: 5rem;
     top: 6rem;
     left: calc(50% - 160px);
-    max-width: 60px;
   }
 
   .frame2 {
+    top: 10rem;
     width: 5rem;
     height: 4rem;
-    top: 10rem;
     left: calc(50% - 170px);
-    max-width: 60px;
+  }
+
+  .bank img {
+    width: 45px;
   }
 }
