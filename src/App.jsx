@@ -24,21 +24,21 @@ export default function App() {
 
       <div className="phone-area">
         <div className="phonee">
-          <img src="/src/images/phone.png" alt="" />
+          <img src="/images/phone.png" alt="" />
           <div className="first">
-            <img src="/src/images/001.png" alt="" />
+            <img src="/images/001.png" alt="" />
           </div>
           <div className="arrow-01">
-            <img src="/src/images/Arrow_03.png" alt="" />
+            <img src="/images/Arrow_03.png" alt="" />
           </div>
           <div className="frame">
-            <img src="/src/images/Frame 600.png" alt="" />
+            <img src="/images/Frame 600.png" alt="" />
           </div>
           <div className="arrow-11">
-            <img src="/src/images/Arrow_11.png" alt="" />
+            <img src="/images/Arrow_11.png" alt="" />
           </div>
           <div className="frame2">
-            <img src="/src/images/Frame 602.png" alt="" />
+            <img src="/images/Frame 602.png" alt="" />
           </div>
         </div>
       </div>
@@ -67,7 +67,7 @@ export default function App() {
               ])
               .map((src, idx) => (
                 <div className="bank" key={idx}>
-                  <img src={`/src/images/${src}`} alt="" />
+                  <img src={`/images/${src}`} alt="" />
                 </div>
               ))}
           </div>
