@@ -257,34 +257,45 @@ button {
   .phone-area {
     margin-top: 5px;
     margin-bottom: -50px;
-    margin-left: 1rem;
-    margin-left: 0.5rem;
   }
 
   .phonee {
+    width: 15rem;
     height: 22rem;
+  }
+  .phonee img {
+    width: 100%;
+    object-fit: contain;
   }
 
   .first {
-    width: 3rem;
-    height: 3rem;
-    top: 1.2rem;
-    left: calc(50% + 60px);
+    width: 2rem;
+    height: 2rem;
+    top: 2rem;
+    left: calc(50% + 70px);
   }
 
   .arrow-01 {
     top: 13rem;
+    width: 5rem;
     height: 5rem;
-    left: calc(50% + 105px);
+    left: calc(50% + 95px);
   }
-
+  .arrow-01 img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
   .frame {
     top: 17rem;
     width: 3rem;
     height: 3rem;
     left: calc(50% + 140px);
   }
-
+  .frame img {
+    width: 100%;
+    object-fit: contain;
+  }
   .arrow-11 {
     top: 13.5rem;
     left: calc(50% - 160px);
