@@ -219,13 +219,17 @@ button {
   object-fit: contain;
 }
 @media (max-width: 768px) {
+  #root {
+    padding: 0;
+  }
   .the-site {
     padding: 0;
-    max-width: 1200px;
+
     margin: 0;
   }
   .heading-text {
-    padding: 2rem 0;
+    padding: 2rem 1rem;
+    width: 100%;
   }
   .heading-test h2 {
     font-size: 1.8rem;
@@ -236,6 +240,7 @@ button {
   }
   .form-container {
     flex-direction: column;
+    width: 100%;
   }
   .formm {
     flex-direction: column;
@@ -247,6 +252,11 @@ button {
   .formm button {
     margin-top: 0.25rem;
     padding: 12px 70px;
+    width: 100%;
+  }
+  .phone-area {
+    margin-top: 5px;
+    margin-bottom: -50px;
   }
 
   .phonee {
@@ -261,25 +271,25 @@ button {
   }
 
   .arrow-01 {
-    top: 4rem;
+    top: 13rem;
     height: 5rem;
     left: calc(50% + 105px);
   }
 
   .frame {
-    top: 8rem;
+    top: 17rem;
     width: 5rem;
     height: 4rem;
     left: calc(50% + 120px);
   }
 
   .arrow-11 {
-    top: 6rem;
+    top: 13.5rem;
     left: calc(50% - 160px);
   }
 
   .frame2 {
-    top: 10rem;
+    top: 17rem;
     width: 5rem;
     height: 4rem;
     left: calc(50% - 170px);
